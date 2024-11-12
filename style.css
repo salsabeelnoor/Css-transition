@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 48px;
+}
+
+.box-parent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    border: 2px solid red;
+}
+
+.horizontal-line {
+    position: static;
+    display: block;
+    width: 600px;
+    height: 2px;
+    background-color: blue;
+}
+
+.vertical-line {
+    position: absolute;
+    width: 2px;
+    height: 500px;
+    background-color: black;
+}
+
+.small-box {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border: 2px solid green;
+}
