@@ -8,17 +8,18 @@ body {
 
 .box-parent {
     position: relative;
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     width: 600px;
     height: 500px;
     border: 2px solid red;
 }
 
 .horizontal-line {
-    position: static;
-    display: block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     width: 600px;
     height: 2px;
     background-color: blue;
@@ -26,6 +27,8 @@ body {
 
 .vertical-line {
     position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     width: 2px;
     height: 500px;
     background-color: black;
@@ -33,6 +36,9 @@ body {
 
 .small-box {
     position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 200px;
     height: 200px;
     border: 2px solid green;
