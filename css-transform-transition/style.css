@@ -44,9 +44,25 @@ body {
     border: 2px solid green;
     cursor: pointer;
     z-index: 1;
-    transition: all 0.5s ease-in;
+    /* transition: all 0.5s ease-in; */
+    animation: 3s linear 1s infinite rotation;
 }
 
-.small-box:hover {
+/* .small-box:hover {
     transform: translate(-50%, -50%) rotate(90deg);
+} */
+
+/* -------------- Keyframe ----------------- */
+@keyframes rotation {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    /* 50% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    } */
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
+
+
